@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the document type to ensure proper rendering -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for supporting various symbols and languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design for all device sizes -->
+    <title>Photo Collection</title> <!-- Sets the title of the webpage as displayed on the browser tab -->
+    <style>
+        /* General styling for the page */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+            line-height: 1.6; /* Adjusts the line height for readability */
+            background-color: #f4f4f4; /* Sets a light gray background color */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: #333; /* Dark background for contrast */
+            color: #fff; /* Sets the text color to white for visibility */
+            padding: 20px; /* Adds spacing inside the header */
+            text-align: center; /* Centers all header content */
+        }
+
+        /* Styling for the logo within the header */
+        header img {
+            max-height: 60px; /* Ensures the logo image doesn't exceed 60px in height */
+            display: block; /* Treats the image as a block-level element */
+            margin: 0 auto; /* Centers the image within the header */
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #555; /* Neutral background color for the navigation bar */
+            overflow: hidden; /* Ensures all navigation links are displayed properly */
+            display: flex; /* Aligns links horizontally in a row */
+            justify-content: center; /* Centers the navigation links */
+        }
+
+        /* Styling for individual links in the navigation bar */
+        nav a {
+            text-decoration: none; /* Removes underline from links */
+            color: white; /* Sets link text color to white */
+            padding: 14px 20px; /* Adds spacing inside links */
+            display: inline-block; /* Ensures links are displayed properly */
+        }
+
+        /* Styling for hover effect on navigation links */
+        nav a:hover {
+            background-color: #777; /* Changes background color when hovered over */
+        }
+
+        /* Styling for the main photo collection section */
+        .photo-collection {
+            text-align: center; /* Centers the photo collection */
+            margin: 20px auto; /* Centers the section horizontally and adds spacing at the top and bottom */
+            max-width: 1000px; /* Restricts the width for readability */
+            padding: 20px; /* Adds spacing inside the section */
+            background: #fff; /* Sets a white background for contrast */
+            border-radius: 8px; /* Rounds the corners of the section */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a polished look */
+        }
+
+        /* Styling for individual images */
+        .photo-collection img {
+            width: 100%; /* Ensures the image spans its container width */
+            max-width: 300px; /* Restricts the maximum image width */
+            margin: 10px; /* Adds spacing around the images */
+            border-radius: 8px; /* Rounds the corners of the images */
+        }
+
+        /* Styling for captions under images */
+        .photo-collection figure {
+            display: inline-block; /* Arranges figures in a grid layout */
+            margin: 15px; /* Adds spacing between figures */
+            text-align: center; /* Centers text within each figure */
+        }
+
+        .photo-collection figcaption {
+            font-size: 0.9rem; /* Reduces font size for captions */
+            color: #555; /* Sets a neutral color for caption text */
+            margin-top: 5px; /* Adds spacing above the caption */
+        }
+
+        /* Styling for the footer section */
+        footer {
+            background-color: #333; /* Matches the header's dark background color */
+            color: #fff; /* Sets text color to white for visibility */
+            text-align: center; /* Centers text within the footer */
+            padding: 10px 0; /* Adds vertical spacing inside the footer */
+            margin-top: 20px; /* Adds spacing between the footer and the rest of the content */
+        }
+    </style> <!-- Internal CSS for styling the webpage -->
+</head> 
+<body> <!-- Start of the body section of the HTML document -->
+    <!-- Header Section -->
+    <header> <!-- Container for the header section -->
+        <img src="jonathan-logo.png" alt="Website Logo"> <!-- Logo at the top of the page -->
+        <h1>Photo Collection</h1> <!-- Main heading for the page -->
+    </header> <!-- End of Header Section -->
+
+    <!-- Navigation Bar -->
+    <nav> <!-- Container for the navigation bar -->
+        <a href="homepage.html">Home</a> <!-- Link to the home page -->
+        <a href="aboutmepage.html">About Me</a> <!-- Link to the about me page -->
+        <a href="hobbiespage.html">Hobbies</a> <!-- Link to the hobbies page -->
+        <a href="eventspage.html">Events</a> <!-- Link to the events page -->
+        <a href="photocollectionpage.html">Photo Collection</a> <!-- Link to the photo collection page -->
+        <a href="contactmepage.html">Contact Me</a> <!-- Link to the contact me page -->
+        <a href="specialannouncementspage.html">Special Announcements</a> <!-- Link to the special announcements page -->
+    </nav> <!-- End of Navigation Bar -->
+
+    <!-- Photo Collection Section -->
+    <div class="photo-collection"> <!-- Container for the photo collection section -->
+        <h2>Jonathan's Photo Collection</h2> <!-- Subheading for the photo collection -->
+        <p>Take a glance at my photo collection of hobbies and events!</p> <!-- Introductory text for the photo collection -->
+
+        <!-- Grid of Photos with Captions -->
+        <figure>
+            <h3>Fishing</h3> <!-- Heading for the first photo -->
+            <img src="fishing.jpg"  alt="Fishing Time">
+            <figcaption>Fishing in Rockport-Fulton for a black drum!</figcaption>
+        </figure> <!-- First photo with caption -->
+        <figure> 
+            <h3>Gaming</h3> <!-- Heading for the second photo -->
+            <img src="gaming.jpg" alt="Gaming Time">
+            <figcaption>A little bit of Fortnite to relax!</figcaption>
+        </figure> <!-- Second photo with caption -->
+        <figure>
+            <h3>Family Activities</h3> <!-- Heading for the third photo -->
+            <img src="family.jpg" alt="Family Time">
+            <figcaption>Spending some quality family time out at the aquarium in Corpus Christi, TX!</figcaption>
+        </figure> <!-- Third photo with caption -->
+        <figure>
+            <h3>Cooking and BBQ</h3>
+            <img src="cooking.jpg" alt="Cooking Time">
+            <figcaption>Throwing down some of the finest meats of the land. Grill it up!</figcaption>
+        </figure> <!-- Fourth photo with caption -->
+        <figure>
+            <h3>Auto Mechanics</h3>
+            <img src="mechanicwork.jpg" alt="Working on autos">
+            <figcaption>Trying my best to piece this thing back together!</figcaption>
+        </figure> <!-- Fifth photo with caption -->
+        <figure>
+            <h3>UKC Dog Show</h3>
+            <img src="ukcdogshow.jpg" alt="Dog show event at UKC">
+            <figcaption>It is always a good day when you are bringing home the gold!</figcaption>
+        </figure> <!-- Sixth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Seventh photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Eighth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Ninth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Tenth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Eleventh photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Twelfth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Thirteenth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Fourteenth photo with caption -->
+        <figure>
+            <h3></h3>
+            <img src=".jpg" alt="">
+            <figcaption></figcaption>
+        </figure> <!-- Fifteenth photo with caption -->
+    </div> <!-- End of Photo Collection Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        © 2025 Jonathan's Website | All Rights Reserved <!-- Footer with copyright information -->
+    </footer> <!-- End of Footer Section -->
+</body>
+</html>
+<!-- End of the HTML document -->
